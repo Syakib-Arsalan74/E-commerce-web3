@@ -5,18 +5,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', function () {
     return view('welcome');
 });
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('dashboard');
 });
-Route::get('/settings', function () {
-    return view('settings');
+Route::get('/setting', function () {
+    return view('setting');
 });
-Route::get('/inboxs', function () {
-    return view('inboxs');
+Route::get('/inbox', function () {
+    return view('inbox');
 });
-Route::get('/users', function () {
-    return view('users');
+Route::get('/user', function () {
+    return view('user');
 });
-Route::get('/products', function () {
-    return view('products');
+Route::get('/product', function () {
+    return view('product');
 });
