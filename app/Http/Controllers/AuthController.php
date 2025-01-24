@@ -11,6 +11,10 @@ class AuthController extends Controller
     return view('register');
   }
   function submitRegister(Request $request){
-    $user = new User()
+    $user = new User();
+
+  }
+  function viewLogin(){
+    return view('login');
   }
 }

@@ -21,3 +21,6 @@ Route::get('/product', function () {
 
 Route::get('/registration',[AuthController::class, 'viewRegister'])->name('register.view');
 Route::post('/registration/submit',[AuthController::class, 'submitRegister'])->name('register.submit');
+
+Route::get('/login',[AuthController::class, 'viewLogin'])->name('login.view');
+Route::post('/login/submit',[AuthController::class, 'submitLogin'])->name('login.submit');
